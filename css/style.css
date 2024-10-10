@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Dosis", sans-serif;
+	font-size: 16px;
+}
+
+/* custom colors */
+
+.green {
+	color: #52ab98;
+}
+
+.bg-green {
+	background-color: #52ab98;
+}
+
+.beige {
+	color: #f2f2f2;
+}
+
+.bg-beige {
+	background-color: #f2f2f2;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+/* #2b6777 #c8d8e4 #ffffff #f2f2f2 #52ab98 */
+
+.header {
+	padding: 10px;
+}
+
+.header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-container {
+	font-size: 24px;
+}
+
+.nav-link-container ul,
+.auth-container ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.nav-link-container ul li a,
+.auth-container ul li a {
+	color: white;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #3b6777;
+}
+
+/* categories */
+
+.category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 50px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.category ul {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	width: 50%;
+	justify-content: center;
+}
+
+.category ul li {
+	text-align: center;
+}
+
+.category ul li a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	color: #c8d8e4;
+	transition: all 0.5s ease-in-out;
+}
+
+.category ul li a:hover {
+	color: #52ab98;
+}
+
+/* Featured */
+
+.featured h1 {
+	text-align: center;
+}
+
+.featured-container {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 20px;
+	margin: 20px;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 1rem;
+	padding: 10px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s ease-in-out;
+}
+
+.product-card:hover {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.product-details {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.product-details button {
+	border: 0;
+	background-color: #52ab98;
+	color: #ffffff;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.product-details button:hover {
+	background-color: #3b6777;
+}
+
+/* profile */
+.page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.profile-details {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+	padding: 20px;
+	color: white;
+}
+
+.profile-img img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.socials ul {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	color: white;
+}
+
+.socials ul li a {
+	color: white;
+}
+
+.socials ul li a:hover {
+	background: rgba(200, 200, 200, 0.5);
+	padding: 10px;
+	border-radius: 50%;
+	transition: all 0.5s ease-in-out;
+}
+
+.profile-form form {
+	margin: 20px;
+}
+
+.profle-form form .form-group {
+	margin-top: 10px;
+}
+
+.profile-form form input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #52ab98;
+	border-radius: 5px;
+}
+
+button {
+	border: 0;
+	padding: 15px;
+	margin-top: 10px;
+	border-radius: 5px;
+	float: right;
+}
+
+/* signup */
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	padding: 20px;
+	margin: 10px;
+	border: 2px solid #52ab98;
+	border-radius: 5px;
+}
+
+form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form .form-group {
+	margin-top: 10px;
+}
+
+form input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #52ab98;
+	border-radius: 5px;
+}
+
+.button-div {
+	text-align: center;
+}
+.signup-btn {
+	float: none;
+	font-size: 16px;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	/* styles here */
+	body {
+		background-color: #222222;
+	}
+
+	.category{
+		display: none;
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* styles here */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* styles here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	/* styles here */
+}
